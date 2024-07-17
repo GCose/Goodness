@@ -908,6 +908,10 @@ footer a {
   font-size: 1.5em;
 }
 
+.footer__copyright {
+  text-align: center;
+}
+
 .footer__copyright p {
   font-weight: 300;
   margin-top: 50px;
