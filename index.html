@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodness || Software Engineer</title>
+
+    <!--======================== Google Fonts Link ========================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--======================== Google Fonts Link ========================-->
+
+    <!--============================== BoxIcon Link ==============================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <!--============================== End of BoxIcon Link ==============================-->
+
+    <!--============================== StyleSheet Link ==============================-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--============================== End of StyleSheet Link ==============================-->
+  </head>
+  <body>
+    <!-- <span class="scroller"></span> -->
+    <div class="mouse"><span></span></div>
+    <div class="welcome__message" id="welcomeMessage">
+      <p>Welcome to my portfolio!</p>
+    </div>
+    <!--============================== Header ==============================-->
+    <header class="header container reveal__left">
+      <nav class="nav__bar">
+        <a href="#home" class="logo">Goodness</a>
+        <ul class="nav__list">
+          <!--============================== Navigation Link 1 ==============================-->
+          <li>
+            <a href="#home" class="link__item" title="Home"
+              ><i class="bx bx-home"></i
+            ></a>
+          </li>
+          <!--============================== End of Navigation Link 1 ==============================-->
+
+          <!--============================== Navigation Link 2 ==============================-->
+          <li>
+            <a href="#about" class="link__item" title="About Me"
+              ><i class="bx bx-user"></i
+            ></a>
+          </li>
+          <!--============================== End of Navigation Link 2 ==============================-->
+
+          <!--============================== Navigation Link 3 ==============================-->
+          <li>
+            <a href="#services" class="link__item" title="My Services"
+              ><i class="bx bx-briefcase"></i
+            ></a>
+          </li>
+          <!--============================== End of Navigation Link 3 ==============================-->
+
+          <!--============================== Navigation Link 4 ==============================-->
+          <li>
+            <a href="#portfolio" class="link__item" title="Portfoilo"
+              ><i class="bx bx-folder-open"></i
+            ></a>
+          </li>
+          <!--============================== End of Navigation Link 4 ==============================-->
+
+          <!--============================== Navigation Link 5 ==============================-->
+          <li>
+            <a href="#contact" class="link__item" title="Contact Me"
+              ><i class="bx bx-phone"></i
+            ></a>
+          </li>
+          <!--============================== End of Navigation Link 5 ==============================-->
+        </ul>
+
+        <div class="menu__icons">
+          <span class="theme__icon" title="Change Theme"
+            ><i class="bx bx-sun"></i>
+            <i class="bx bx-moon"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <!--============================== End of Header ==============================-->
+
+    <main class="main container">
+      <!--============================== Home Section ==============================-->
+      <section class="home__section section" id="home">
+        <div class="gradient__color"></div>
+        <div class="home__wrapper">
+          <video autoplay loop muted plays-inline class="particles">
+            <source src="./assets/video/particles.mp4" type="video/mp4" />
+          </video>
+          <div class="home__title">
+            <h1 class="header__title reveal__bottom">
+              HI, I am <span class="text">Goodness</span>. <br />
+              A <span class="text">Software Engineer</span> dedicated to
+              bringing your ideas to life using
+              <span class="text">modern</span> tech stacks and
+              <span class="text">tools</span>.
+            </h1>
+            <h3 class="home__description reveal__right">
+              Whether you're an entrepreneur seeking a stunning website, a
+              business in need of a fresh online presence, or a fellow developer
+              looking to collaborate, I'm here to make your digital dreams a
+              reality.
+              <!-- <marquee behavior="" direction="left"
+                ><span class="text">Welcome to my portfolio</span></marquee
+              > -->
+            </h3>
+          </div>
+          <div class="home__buttons">
+            <a href="#home" class="btn reveal__top">Download CV</a>
+            <a href="#contact" class="btn reveal__top">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <!--============================== End of Home Section ==============================-->
+
+      <!--============================== About Section ==============================-->
+      <section class="about__section section" id="about">
+        <h1 class="about__header section__header text reveal__scale">
+          About Me
+        </h1>
+        <div class="about__container">
+          <div class="about__content">
+            <div class="about__description reveal__left">
+              <i class="bx bx-user"></i>
+              <div class="about__info">
+                I am an enthusiastic software engineer dedicated to bringing
+                digital visions to life. My fascination with crafting engaging
+                online experiences sparked my journey in coding and design,
+                which has evolved into a thrilling adventure over time.
+              </div>
+            </div>
+            <div class="about__description reveal__right">
+              <i class="bx bx-expand"></i>
+              <div class="about__info">
+                My dedication to crafting outstanding digital journeys
+                <span class="text">extends</span>
+                beyond technical expertise. It revolves around grasping your
+                distinct vision and crafting a website that resonates deeply. I
+                firmly believe in the strength of collaboration with clients to
+                ensure their concepts are brilliantly showcased.
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/mee.png" alt="Me" class="about__img" />
+        </div>
+      </section>
+      <!--============================== End of About Section ==============================-->
+
+      <!--============================== TimeLine Section ==============================-->
+      <section class="timeline__section section">
+        <h1 class="section__header text reveal__scale">My TimeLine</h1>
+        <div class="timeline__container">
+          <!--============================== Education Container ==============================-->
+          <div class="education__container">
+            <h3 class="reveal__left">
+              <i class="bx bx-briefcase"></i> Education
+            </h3>
+            <!--============================== Education Card 1 ==============================-->
+            <div class="timeline__card reveal__top">
+              <h4 class="date">2022-2026</h4>
+              <h2 class="title">Bachelor of Science in Computer Science.</h2>
+              <p class="info">
+                I am currently pursuing a Bachelors degreen in Computer Science
+                at the University of The Gambia. This program will span 4 years.
+              </p>
+              <p class="location">
+                <i class="bx bx-location-plus"></i>The Gambia
+              </p>
+            </div>
+            <!--============================== End of Education Card 1 ==============================-->
+
+            <!--============================== Education Card 2 ==============================-->
+            <div class="timeline__card reveal__right">
+              <h4 class="date">2022-2026</h4>
+              <h2 class="title">Bachelor of Science in Computer Science.</h2>
+              <p class="info">
+                Graduated with honors from Techtopia University, located in the
+                heart of Silicon Valley. Provided a solid foundation in software
+                development.
+              </p>
+              <p class="location">
+                <i class="bx bx-location-plus"></i>The Gambia
+              </p>
+            </div>
+            <!--============================== End of Education Card 2 ==============================-->
+
+            <!--============================== Education Card 3 ==============================-->
+            <div class="timeline__card reveal__left">
+              <h4 class="date">2022-2026</h4>
+              <h2 class="title">Bachelor of Science in Computer Science.</h2>
+              <p class="info">
+                Graduated with honors from Techtopia University, located in the
+                heart of Silicon Valley. Provided a solid foundation in software
+                development.
+              </p>
+              <p class="location">
+                <i class="bx bx-location-plus"></i>The Gambia
+              </p>
+            </div>
+            <!--============================== End of Education Card 3 ==============================-->
+          </div>
+          <!--============================== End of Education Container ==============================-->
+
+          <!--============================== Experience Container ==============================-->
+          <div class="experience__container">
+            <h3 class="reveal__right">
+              <i class="bx bx-folder-open"></i> Experience
+            </h3>
+            <!--============================== Experience Card 1 ==============================-->
+            <div class="timeline__card reveal__bottom">
+              <h4 class="date">2022-Present</h4>
+              <h2 class="title">Founder of StevJay Innovations.</h2>
+              <p class="info">
+                I am the founder and Chief Executive Officer of StevJay
+                innovations. My company seeks to provide soultions using modern
+                day technology.
+              </p>
+              <p class="location">
+                <i class="bx bx-location-plus"></i>The Gambia
+              </p>
+            </div>
+            <!--============================== End of Experience Card 1 ==============================-->
+
+            <!--============================== Experience Card 2 ==============================-->
+            <div class="timeline__card reveal__left">
+              <h4 class="date">2020-Present</h4>
+              <h2 class="title">FreeLance Software Engineer.</h2>
+              <p class="info">
+                I have been a freelance software engineer for over 4 years and
+                my skills in system design, archiecture and development has made
+                my clients happy.
+              </p>
+              <p class="location"><i class="bx bx-location-plus"></i>Nigeria</p>
+            </div>
+            <!--============================== End of Experience Card 2 ==============================-->
+
+            <!--============================== Experience Card 3 ==============================-->
+            <div class="timeline__card reveal__right">
+              <h4 class="date">2017-Present</h4>
+              <h2 class="title">Full-Stack Developer.</h2>
+              <p class="info">
+                I have been in Full-Stack development for quite a while now,
+                about 7 years to be exact and it has been a very fun and
+                exciting experience throughout.
+              </p>
+              <p class="location">
+                <i class="bx bx-location-plus"></i>The Gambia
+              </p>
+            </div>
+            <!--============================== End of Experience Card 3 ==============================-->
+          </div>
+          <!--============================== End of Experience Container ==============================-->
+        </div>
+      </section>
+      <!--============================== End of TimeLine Section ==============================-->
+
+      <!--============================== Services Section ==============================-->
+      <section class="services__section section" id="services">
+        <h1 class="section__header text reveal__scale">My Services</h1>
+        <div class="services__container">
+          <!--============================== Service Card 1 ==============================-->
+          <div class="service__card reveal__scale">
+            <i class="bx bx-code-alt"></i>
+            <h2>Web Site Development</h2>
+            <p>
+              I offer quality and professional web site development services
+              ensuring a quality website and one that suits your exact
+              requirements using modern tools.
+            </p>
+          </div>
+          <!--============================== End of Service Card 1 ==============================-->
+
+          <!--============================== Service Card 2 ==============================-->
+          <div class="service__card reveal__bottom">
+            <i class="bx bx-desktop"></i>
+            <h2>Web App Development</h2>
+            <p>
+              I also offer web application development using ultra fast and
+              modern tech stacks that will bring your ideas to life in this
+              digital world.
+            </p>
+          </div>
+          <!--============================== End of Service Card 2 ==============================-->
+
+          <!--============================== Service Card 3 ==============================-->
+          <div class="service__card reveal__right">
+            <i class="bx bxs-pencil"></i>
+            <h2>Web Design</h2>
+            <p>
+              I offer web design consultancy as well, ensuring that your website
+              or web app follows modern design language and standards with your
+              unique touch.
+            </p>
+          </div>
+          <!--============================== End of Service Card 3 ==============================-->
+
+          <!--============================== Service Card 4 ==============================-->
+          <div class="service__card reveal__right">
+            <i class="bx bx-mobile-alt"></i>
+            <h2>Software Development</h2>
+            <p>
+              I offer software development services ranging from desktop
+              applications to mobile applications. I use the latest tools
+              available to make modern softwares.
+            </p>
+          </div>
+          <!--============================== End of Service Card 4 ==============================-->
+
+          <!--============================== Service Card 5 ==============================-->
+          <div class="service__card reveal__top">
+            <i class="bx bx-slideshow"></i>
+            <h2>Coding Tutorials</h2>
+            <p>
+              I offer coding coaching tutorials where I dive deep into what it
+              actually means to code, the basis of coding and I follow the
+              project-base learning approach.
+            </p>
+          </div>
+          <!--============================== End of Service Card 5 ==============================-->
+
+          <!--============================== Service Card 6 ==============================-->
+          <div class="service__card reveal__left">
+            <i class="bx bx-laptop"></i>
+            <h2>Laptop Repairs</h2>
+            <p>
+              I also offer top-notch quality laptop repair service. I ensure
+              that I treat each client well and makes them come back again when
+              they have problems.
+            </p>
+          </div>
+          <!--============================== End of Service Card 6 ==============================-->
+        </div>
+      </section>
+      <!--============================== End of Services Section ==============================-->
+
+      <!--============================== Profolio Section ==============================-->
+      <section class="portfolio__section section" id="portfolio">
+        <h1 class="section__header text reveal__scale">My Portfolio</h1>
+        <div class="portfolio__container">
+          <!--============================== Portfolio Card 1 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-1.png" alt="Portfolio 1" />
+            <div class="card__info">
+              <h2>Exzaminar</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">Exzaminar</h3>
+                <img
+                  src="assets/images/portfolio-1.png"
+                  alt="Exzaminar image"
+                />
+                <p>
+                  This is a modern exam evaluation platform that has the most
+                  modern tools for exam evaluation. It helps to make the exam
+                  marking and grading process really easy and simple. It is the
+                  world's first and the world's best exam evaluation platform
+                  currectly in existence. This awesome application is still in
+                  beta.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 1 ==============================-->
+
+          <!--============================== Portfolio Card 2 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-5.png" alt="Portfolio 2" />
+            <div class="card__info">
+              <h2>DavCom Site</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">DavCom Site</h3>
+                <img
+                  src="assets/images/portfolio-5.png"
+                  alt="DavCom Site image"
+                />
+                <p>
+                  This is the website of a company that I designed, develpoed
+                  and hosted. The company is a laptop company and they provide
+                  the best of the best services. The company is located in The
+                  Gambia, and boast the best services that money can get in The
+                  Gambia.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 2 ==============================-->
+
+          <!--============================== Portfolio Card 3 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-6.png" alt="Portfolio 3" />
+            <div class="card__info">
+              <h2>G-Note</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">G-Note</h3>
+                <img src="assets/images/portfolio-6.png" alt="G-Note image" />
+                <p>
+                  This is a modern text editor that offers very useful features.
+                  It's goal is actually meant to be a text editor in disguise
+                  but an Integrated Development Enviroment underneath. This
+                  application is very useful for programmers who seek for a
+                  simple app, but also some useful programming features. The
+                  application is still in development.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 3 ==============================-->
+
+          <!--============================== Portfolio Card 4 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-4.png" alt="Portfolio 4" />
+            <div class="card__info">
+              <h2>G-Register</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">G-Register</h3>
+                <img
+                  src="assets/images/portfolio-4.png"
+                  alt="G-Register image"
+                />
+                <p>
+                  This is a very advanced registaration application that helps
+                  you to keep an organized record of either your attendance
+                  records, file records, lists and so on. With it's modern but
+                  simplistic design, users can ensure that their records are not
+                  only organized but also safe.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 4 ==============================-->
+
+          <!--============================== Portfolio Card 5 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-2.png" alt="Portfolio 5" />
+            <div class="card__info">
+              <h2>G-Type</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">G-Type</h3>
+                <img src="assets/images/portfolio-2.png" alt="G-Type image" />
+                <p>
+                  This is a modern type test web application. It boasts a
+                  simplistic yet clean user interface and also boasts a very
+                  beautiful user-experience. As it's name suggests, it is a
+                  typing test platform that provides useful information like the
+                  user's typing timeline, performance, and tons of
+                  customizations. This web application recieves updates from
+                  time to time in other to evolve it and keep it up to date and
+                  ahead of the competition.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 5 ==============================-->
+
+          <!--============================== Portfolio Card 6 ==============================-->
+          <div class="portfolio__card">
+            <img src="assets/images/portfolio-3.png" alt="Portfolio 6" />
+            <div class="card__info">
+              <h2>G-Chat</h2>
+              <a href="#portfolio" class="btn card__btn"
+                ><i class="bx bx-book-reader"></i>Learn More</a
+              >
+            </div>
+            <div class="card__description">
+              <div class="card__description__body">
+                <i class="bx bx-x card__description__close__btn text"></i>
+                <h3 class="text">G-Chat</h3>
+                <img src="assets/images/portfolio-3.png" alt="G-Chat image" />
+                <p>
+                  This is a modern chat application built in Java. The choice of
+                  the language is delibrate. Python is the most popular
+                  programming language for artificial intelligence applications,
+                  but I decided to challenge myself to build a chat application
+                  in Java, that is what G-Chat is. It uses my own trained LLM
+                  called G-LLM. And yes, it's still in development.
+                </p>
+                <div class="view__project">
+                  <a href="#"
+                    >View Project <i class="bx bxs-chevrons-right text"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--============================== End of Portfolio Card 6 ==============================-->
+        </div>
+      </section>
+      <!--============================== End of Profolio Section ==============================-->
+
+      <!--============================== Contact Section ==============================-->
+      <section class="contact__section section" id="contact">
+        <h1 class="section__header text reveal__scale">Contact Me</h1>
+        <div class="contact__container">
+          <div class="contact__info reveal__left">
+            <h1>For More Info, Contact Me</h1>
+
+            <!--============================== Contact Info 1 ==============================-->
+            <div class="contact__detail">
+              <h3><i class="bx bx-phone-call"></i>Phone Number</h3>
+              <p>+220 724 9509</p>
+            </div>
+            <!--============================== End Contact Info 1 ==============================-->
+
+            <!--============================== Contact Info 2 ==============================-->
+            <div class="contact__detail">
+              <h3><i class="bx bx-envelope"></i>Email Address</h3>
+              <p>goodnessadewuyi8@gmail.com</p>
+            </div>
+            <!--============================== End of Contact Info 2 ==============================-->
+
+            <!--============================== Contact Info 3 ==============================-->
+            <div class="contact__detail">
+              <h3><i class="bx bx-current-location"></i>Home Address</h3>
+              <p>Brikama</p>
+            </div>
+            <!--============================== End of Contact Info 3 ==============================-->
+          </div>
+
+          <!--============================== Contact Form ==============================-->
+          <div class="contact__wrapper reveal__right">
+            <form action="" class="contact__form">
+              <!--============================== Contact Form Row 1 ==============================-->
+              <div class="row__one">
+                <input
+                  type="text"
+                  name="Full Name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <!--============================== End of Contact Form Row 1 ==============================-->
+
+              <!--============================== Contact Form Row 2 ==============================-->
+              <div class="row__two">
+                <input
+                  type="email"
+                  name="_replyto"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="_subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <!--============================== End of Contact Form Row 2 ==============================-->
+
+              <!--============================== Contact Form Row 3 ==============================-->
+              <div class="row__three">
+                <textarea
+                  name="Message"
+                  id=""
+                  rows="7"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <!--============================== End of Contact Form Row 3 ==============================-->
+              <button class="btn" type="submit">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <!--============================== End of Contact Form ==============================-->
+          </div>
+        </div>
+      </section>
+      <!--============================== End of Contact Section ==============================-->
+    </main>
+
+    <!--============================== Footer ==============================-->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__info reveal__right">
+          <h2>Goodness</h2>
+          <p>Software Engineer</p>
+        </div>
+        <div class="hr"></div>
+        <div class="footer__links reveal__top">
+          <h3>More</h3>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow reveal__left">
+          <h3>Follow Me</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright reveal__scale">
+        <p>© 2024 by Goodness Adewuyi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--============================== End of Footer ==============================-->
+
+    <!--============================== Main JS Link ==============================-->
+    <script src="assets/js/main.js"></script>
+    <!--============================== End of Main JS Link ==============================-->
+  </body>
+</html>
