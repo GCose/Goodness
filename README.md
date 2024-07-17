@@ -1,5 +1,3 @@
-# MY PORTFOLIO
+# G-PORTFOLIO
 
-This is my new portfolio.
-
-I hope you like it.
+This is my awesome new portfolio.
