@@ -689,6 +689,7 @@ h3 {
 
 .card__description__body p {
   font-weight: 600;
+  text-align: left;
   font-size: 1.2rem;
   color: var(--font-color-dim);
 }
