@@ -1429,9 +1429,9 @@ footer a {
   }
 
   .btn {
-    font-size: 1rem;
     padding: 10px;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   .moving__orb {
