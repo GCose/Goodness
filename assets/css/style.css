@@ -944,12 +944,6 @@ footer a {
 /**=====================
  * ANIMATION STYLES
 =====================*/
-@keyframes scroller {
-  to {
-    scale: 1 1;
-  }
-}
-
 @keyframes animateShadow {
   0%,
   100% {
@@ -1325,7 +1319,11 @@ footer a {
 
 @media (max-width: 780px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   .home__section {
@@ -1363,10 +1361,6 @@ footer a {
 @media (max-width: 596px) {
   .btn {
     margin-bottom: 20px;
-  }
-
-  .home__buttons {
-    flex-direction: column;
   }
 
   .logo {
@@ -1573,14 +1567,15 @@ footer a {
 
 @media (max-width: 330px) {
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   h3 {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   .btn {
+    font-size: 0.8rem;
     margin-bottom: 20px;
   }
 
