@@ -1443,15 +1443,6 @@ footer a {
     content: "Hi";
   }
 
-  .particles {
-    display: none;
-  }
-
-  .header__title,
-  .home__description {
-    color: var(--font-color);
-  }
-
   .section__header {
     font-size: 3.5rem;
   }
