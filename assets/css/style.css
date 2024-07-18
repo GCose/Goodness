@@ -111,14 +111,7 @@ body > :not(#welcomeMessage) {
 /**=====================
 * GENERAL STYLES
 =====================*/
-html,
 body {
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   background: var(--background-color);
 }
@@ -1311,6 +1304,14 @@ footer a {
 }
 
 @media (max-width: 990px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .nav__list {
+    column-gap: 1.9em;
+  }
+
   .moving__orb {
     width: 60%;
     height: 100%;
@@ -1322,14 +1323,6 @@ footer a {
     content: "Hello there";
   }
 
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  .nav__list {
-    column-gap: 1.9em;
-  }
-
   .about__img {
     width: 90%;
     border-radius: 20px;
@@ -1337,17 +1330,6 @@ footer a {
 }
 
 @media (max-width: 780px) {
-  .moving__orb {
-    width: 55%;
-    height: 100%;
-  }
-
-  .moving__orb::before {
-    width: 55px;
-    height: 55px;
-    content: "Welcome!";
-  }
-
   h1 {
     font-size: 3rem;
   }
@@ -1371,20 +1353,20 @@ footer a {
     font-weight: 900;
     font-size: 1.3rem;
   }
-}
 
-@media (max-width: 596px) {
   .moving__orb {
-    width: 40%;
+    width: 55%;
     height: 100%;
   }
 
   .moving__orb::before {
-    width: 40px;
-    height: 40px;
-    content: "Hello";
+    width: 55px;
+    height: 55px;
+    content: "Welcome!";
   }
+}
 
+@media (max-width: 596px) {
   .btn {
     margin-bottom: 20px;
   }
@@ -1401,6 +1383,17 @@ footer a {
     column-gap: 1.6rem;
   }
 
+  .moving__orb {
+    width: 40%;
+    height: 100%;
+  }
+
+  .moving__orb::before {
+    width: 40px;
+    height: 40px;
+    content: "Hello";
+  }
+
   .about__description {
     gap: 0.7rem;
     margin: 20px;
@@ -1412,21 +1405,6 @@ footer a {
 @media (max-width: 480px) {
   #welcomeMessage p {
     font-size: 1rem;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .moving__orb {
-    width: 20%;
-    height: 100%;
-  }
-
-  .moving__orb::before {
-    width: 20px;
-    height: 20px;
-    content: "Hi";
   }
 
   h1 {
@@ -1452,6 +1430,23 @@ footer a {
 
   .btn {
     margin-bottom: 20px;
+  }
+
+  .moving__orb {
+    width: 20%;
+    height: 100%;
+  }
+
+  .moving__orb::before {
+    width: 20px;
+    height: 20px;
+    content: "Hi";
+  }
+
+  .particles {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
   }
 
   .section__header {
