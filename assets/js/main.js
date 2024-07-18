@@ -123,6 +123,19 @@ const reveal = new IntersectionObserver((entries) => {
   });
 });
 
+// For a timed interval between the reveals
+// const reveal = new IntersectionObserver((entries) => {
+//   entries.forEach((entry, index) => {
+//     if (entry.isIntersecting) {
+//       setTimeout(() => {
+//         entry.target.classList.add("reveal__items");
+//       }, index * 100); // Adjust the multiplier (100) for a different interval
+//     } else {
+//       entry.target.classList.remove("reveal__items");
+//     }
+//   });
+// });
+
 const revealTop = document.querySelectorAll(".reveal__top");
 revealTop.forEach((element) => reveal.observe(element));
 
