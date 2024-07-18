@@ -1408,11 +1408,11 @@ footer a {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .nav__bar {
@@ -1429,6 +1429,8 @@ footer a {
   }
 
   .btn {
+    font-size: 1rem;
+    padding: 10px;
     margin-bottom: 20px;
   }
 
@@ -1520,10 +1522,6 @@ footer a {
 }
 
 @media (max-width: 380px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-
   .nav__list {
     column-gap: 0.9rem;
   }
@@ -1580,6 +1578,18 @@ footer a {
 }
 
 @media (max-width: 330px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 0.6rem;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
   .portfolio__card {
     width: 95%;
   }
