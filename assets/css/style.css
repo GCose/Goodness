@@ -947,6 +947,15 @@ footer a {
   transform: translateX(0);
 }
 
+.reveal__left,
+.reveal__right,
+.reveal__top,
+.reveal__bottom,
+.reveal__rotate,
+.reveal__scale {
+  overflow: hidden;
+}
+
 /**=====================
  * ANIMATION STYLES
 =====================*/
