@@ -499,16 +499,29 @@ h3 {
 }
 
 .timeline__card::before {
-  top: 20px;
+  top: 10px;
   content: "";
-  left: 0.5rem;
+  left: 0.2rem;
   width: 1.2rem;
   height: 1.2rem;
   display: block;
   position: absolute;
   border-radius: 50%;
+  /* animation: danceAround 2s ease-in-out infinite; */
   background: linear-gradient(70deg, #000282, #29f1ff);
-  animation: danceAround 2s ease-in-out infinite;
+}
+
+.timeline__card::after {
+  top: 15px;
+  z-index: -1;
+  content: "";
+  height: 90%;
+  left: 0.7rem;
+  width: 0.2rem;
+  display: block;
+  position: absolute;
+  background: rgb(0, 26, 255);
+  border-radius: var(--big--border-radius);
 }
 
 .experience__container h3 {
