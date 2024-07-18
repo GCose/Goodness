@@ -828,6 +828,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   background: var(--footer-background);
+  border-top-left-radius: var(--big--border-radius);
+  border-top-right-radius: var(--big--border-radius);
 }
 
 footer a {
