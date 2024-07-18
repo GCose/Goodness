@@ -511,10 +511,10 @@ h3 {
 }
 
 .timeline__card::after {
-  top: 15px;
+  top: -50px;
   z-index: -1;
   content: "";
-  height: 90%;
+  height: 120%;
   left: -1.5rem;
   width: 0.2rem;
   display: block;
