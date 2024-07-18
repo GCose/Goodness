@@ -1510,6 +1510,10 @@ footer a {
 }
 
 @media (max-width: 380px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+
   .nav__list {
     column-gap: 0.9rem;
   }
