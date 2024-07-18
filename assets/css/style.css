@@ -1092,11 +1092,11 @@ footer a {
   }
 
   h1 {
-    font-size: 3.3rem;
+    font-size: 3.8rem;
   }
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .section__header {
@@ -1108,8 +1108,8 @@ footer a {
   }
 
   .home__title {
-    font-size: 4rem;
     line-height: 2;
+    font-size: 4rem;
   }
 
   .about__section {
