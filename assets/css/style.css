@@ -433,13 +433,13 @@ h3 {
 
 .timeline__container {
   display: flex;
-  padding: 0 30px;
+  padding: 0 40px;
   align-items: center;
   justify-content: space-between;
 }
 
 .education__container {
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .education__container h3 {
@@ -501,13 +501,12 @@ h3 {
 .timeline__card::before {
   top: 10px;
   content: "";
-  left: -1.2rem;
+  left: -2rem;
   width: 1.2rem;
   height: 1.2rem;
   display: block;
   position: absolute;
   border-radius: 50%;
-  /* animation: danceAround 2s ease-in-out infinite; */
   background: linear-gradient(70deg, #000282, #29f1ff);
 }
 
@@ -516,7 +515,7 @@ h3 {
   z-index: -1;
   content: "";
   height: 90%;
-  left: -0.7rem;
+  left: -1.5rem;
   width: 0.2rem;
   display: block;
   position: absolute;
