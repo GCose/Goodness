@@ -26,7 +26,6 @@
     <!--============================== End of StyleSheet Link ==============================-->
   </head>
   <body>
-    <!-- <span class="scroller"></span> -->
     <div class="mouse"><span></span></div>
     <div class="welcome__message" id="welcomeMessage">
       <p>Welcome to my portfolio!</p>
@@ -90,9 +89,16 @@
     <main class="main container">
       <!--============================== Home Section ==============================-->
       <section class="home__section section" id="home">
-        <div class="gradient__color"></div>
+        <div class="moving__orb"></div>
         <div class="home__wrapper">
-          <video autoplay loop muted plays-inline class="particles">
+          <video
+            autoplay
+            loop
+            muted
+            plays-inline
+            class="particles"
+            loading="lazy"
+          >
             <source
               src="./assets/particles-effect/particles.mp4"
               type="video/mp4"
