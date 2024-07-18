@@ -953,7 +953,7 @@ footer a {
 .reveal__bottom,
 .reveal__rotate,
 .reveal__scale {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /**=====================
