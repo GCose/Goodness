@@ -132,9 +132,6 @@ revealBottom.forEach((element) => reveal.observe(element));
 const revealLeft = document.querySelectorAll(".reveal__left");
 revealLeft.forEach((element) => reveal.observe(element));
 
-const revealRight = document.querySelectorAll(".reveal__right");
-revealRight.forEach((element) => reveal.observe(element));
-
 const revealRotate = document.querySelectorAll(".reveal__rotate");
 revealRotate.forEach((element) => reveal.observe(element));
 

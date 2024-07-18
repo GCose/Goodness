@@ -924,12 +924,6 @@ footer a {
   transform: translateX(-250px);
 }
 
-.reveal__right {
-  opacity: 0;
-  transition: 1s ease-in-out;
-  transform: translateX(250px);
-}
-
 .reveal__rotate {
   opacity: 0;
   transform: rotate(180deg);
@@ -945,15 +939,6 @@ footer a {
 .reveal__items {
   opacity: 1;
   transform: translateX(0);
-}
-
-.reveal__left,
-.reveal__right,
-.reveal__top,
-.reveal__bottom,
-.reveal__rotate,
-.reveal__scale {
-  overflow-x: hidden;
 }
 
 /**=====================
