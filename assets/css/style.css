@@ -433,13 +433,13 @@ h3 {
 
 .timeline__container {
   display: flex;
-  padding: 0 20px;
+  padding: 0 30px;
   align-items: center;
   justify-content: space-between;
 }
 
 .education__container {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .education__container h3 {
@@ -501,7 +501,7 @@ h3 {
 .timeline__card::before {
   top: 10px;
   content: "";
-  left: 0.2rem;
+  left: -1.2rem;
   width: 1.2rem;
   height: 1.2rem;
   display: block;
@@ -516,7 +516,7 @@ h3 {
   z-index: -1;
   content: "";
   height: 90%;
-  left: 0.7rem;
+  left: -0.7rem;
   width: 0.2rem;
   display: block;
   position: absolute;
