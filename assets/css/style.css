@@ -86,6 +86,7 @@
 }
 
 @keyframes typing {
+
   0%,
   40%,
   60%,
@@ -104,7 +105,7 @@
   }
 }
 
-body > :not(#welcomeMessage) {
+body> :not(#welcomeMessage) {
   display: none;
 }
 
@@ -960,19 +961,23 @@ footer a {
  * ANIMATION STYLES
 =====================*/
 @keyframes animateShadow {
+
   0%,
   100% {
     box-shadow: 0 5px 50px rgba(53, 56, 212, 0.3),
       0 5px 50px rgba(0, 238, 255, 0.704);
   }
+
   25% {
     box-shadow: 0 5px 50px rgba(80, 71, 255, 0.3),
       0 5px 50px rgba(0, 195, 255, 0.3);
   }
+
   50% {
     box-shadow: 0 5px 50px rgba(14, 0, 171, 0.3),
       0 5px 50px rgba(0, 128, 128, 0.3);
   }
+
   75% {
     box-shadow: 0 5px 50px rgba(30, 144, 255, 0.3),
       0 5px 50px rgba(75, 0, 130, 0.3);
@@ -984,18 +989,22 @@ footer a {
     top: 10%;
     left: 10%;
   }
+
   25% {
     top: 10%;
     left: 80%;
   }
+
   50% {
     top: 70%;
     left: 80%;
   }
+
   75% {
     top: 70%;
     left: 10%;
   }
+
   100% {
     top: 10%;
     left: 10%;
@@ -1046,6 +1055,7 @@ footer a {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: scale(0.97);
   }
