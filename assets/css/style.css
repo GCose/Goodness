@@ -26,11 +26,11 @@
   --font-color: #ffffff;
   --font-color-dim: #ffffffd4;
   --font-color-dimer: #ffffff85;
-  --background-color: #000316;
   --box-shadow: 0 5px 20px rgba(53, 56, 212, 0.3),
     0 10px 20px rgba(43, 241, 255, 0.3);
   --footer-background: linear-gradient(70deg, #000046, #004855);
   --card-background-color: linear-gradient(70deg, #0d0d3b, #0b3941);
+  --background-color: linear-gradient(145deg, black, rgb(1, 1, 34), #004855);
 }
 
 /**=====================
@@ -115,6 +115,7 @@ body> :not(#welcomeMessage) {
 body {
   overflow-x: hidden;
   background: var(--background-color);
+  background-attachment: fixed;
 }
 
 .mouse {
