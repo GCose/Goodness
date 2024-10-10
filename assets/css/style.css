@@ -30,7 +30,7 @@
     0 10px 20px rgba(43, 241, 255, 0.3);
   --footer-background: linear-gradient(70deg, #000046, #004855);
   --card-background-color: linear-gradient(70deg, #0d0d3b, #0b3941);
-  --background-color: linear-gradient(145deg, black, rgb(1, 1, 34), #004855);
+  --background-color: linear-gradient(145deg, black, #010122, #004855, black);
 }
 
 /**=====================
