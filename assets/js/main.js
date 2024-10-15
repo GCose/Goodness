@@ -1,15 +1,49 @@
 /**=============================
- * WELCOME MESSAGE TYPEWRITER 
+ * WELCOME MESSAGE AND VIDEO LOADER
 =============================*/
 document.addEventListener("DOMContentLoaded", function () {
+  const welcomeMessage = document.getElementById("welcomeMessage");
+  const welcomeText = welcomeMessage.querySelector("p");
+  const video = document.querySelector(".particles");
+  const content = document.querySelectorAll("body > :not(#welcomeMessage)");
+
+  let videoLoaded = false;
+  let animationComplete = false;
+
+  function showContent() {
+    welcomeMessage.style.display = "none";
+    content.forEach(element => {
+      element.style.display = "block";
+    });
+  }
+
+  function checkReadyState() {
+    if (videoLoaded && animationComplete) {
+      showContent();
+    }
+  }
+
+  video.addEventListener('loadeddata', function () {
+    videoLoaded = true;
+    checkReadyState();
+  });
+
+  const animationDuration = welcomeText.textContent.length * 0.15;
+  welcomeText.style.animation = `typing ${animationDuration}s steps(${welcomeText.textContent.length}), blink 0.75s step-end infinite`;
+
+  welcomeText.addEventListener('animationend', function (e) {
+    if (e.animationName === 'typing') {
+      animationComplete = true;
+      checkReadyState();
+    }
+  });
+
   setTimeout(function () {
-    document.getElementById("welcomeMessage").style.display = "none";
-    document
-      .querySelectorAll("body > :not(#welcomeMessage)")
-      .forEach(function (element) {
-        element.style.display = "block";
-      });
-  }, 7000);
+    if (!videoLoaded) {
+      videoLoaded = true;
+      checkReadyState();
+    }
+  }, Math.max(animationDuration * 1000, 10000));
 });
 
 /**=============================
@@ -122,19 +156,6 @@ const reveal = new IntersectionObserver((entries) => {
     }
   });
 });
-
-// For a timed interval between the reveals
-// const reveal = new IntersectionObserver((entries) => {
-//   entries.forEach((entry, index) => {
-//     if (entry.isIntersecting) {
-//       setTimeout(() => {
-//         entry.target.classList.add("reveal__items");
-//       }, index * 100); // Adjust the multiplier (100) for a different interval
-//     } else {
-//       entry.target.classList.remove("reveal__items");
-//     }
-//   });
-// });
 
 const revealTop = document.querySelectorAll(".reveal__top");
 revealTop.forEach((element) => reveal.observe(element));
