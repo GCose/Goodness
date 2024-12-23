@@ -2,15 +2,31 @@
  * WELCOME MESSAGE TYPEWRITER 
 =============================*/
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    document.getElementById("welcomeMessage").style.display = "none";
+  const video = document.querySelector("video.particles");
+  const welcomeMessage = document.getElementById("welcomeMessage");
+
+  let timeout = setTimeout(() => {
+    welcomeMessage.style.display = "none";
     document
       .querySelectorAll("body > :not(#welcomeMessage)")
       .forEach(function (element) {
         element.style.display = "block";
       });
-  }, 7000);
+  }, 10000); // Maximum fallback timeout (10 seconds)
+
+  if (video) {
+    video.addEventListener("canplaythrough", function () {
+      clearTimeout(timeout); // Clear the fallback timeout
+      welcomeMessage.style.display = "none";
+      document
+        .querySelectorAll("body > :not(#welcomeMessage)")
+        .forEach(function (element) {
+          element.style.display = "block";
+        });
+    });
+  }
 });
+
 
 /**=============================
  * NAVIGATION LINK ACTIVATOR 
