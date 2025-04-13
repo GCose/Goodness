@@ -17,6 +17,27 @@
   --box-shadow-2: 0 5px 5px rgba(53, 56, 212, 0.3),
     0 5px 5px rgba(43, 241, 255, 0.3);
   --footer-background: linear-gradient(90deg, #0f1053, #014d53);
+
+  /* Font size variables for better consistency */
+  --fs-xxl: clamp(2.5rem, 5vw + 1rem, 5rem);
+  /* For largest headings */
+  --fs-xl: clamp(2rem, 3vw + 1rem, 3.8rem);
+  /* For h1 elements */
+  --fs-lg: clamp(1.5rem, 2vw + 0.8rem, 3.5rem);
+  /* For section headers */
+  --fs-md: clamp(1.2rem, 1.5vw + 0.5rem, 1.8rem);
+  /* For h3, important text */
+  --fs-base: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  /* For regular content */
+  --fs-sm: clamp(0.875rem, 0.8vw + 0.5rem, 1.2rem);
+  /* For smaller text */
+  --fs-xs: clamp(0.75rem, 0.6vw + 0.4rem, 0.9rem);
+  /* For tiny text */
+
+  /* Icon sizes */
+  --icon-sm: clamp(1.5rem, 1.5vw + 0.5rem, 2.5rem);
+  --icon-md: clamp(2rem, 2vw + 1rem, 3rem);
+  --icon-lg: clamp(2.5rem, 3vw + 1rem, 4rem);
 }
 
 /**====================
@@ -78,7 +99,7 @@
 }
 
 #welcomeMessage p {
-  font-size: 5rem;
+  font-size: var(--fs-xxl);
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid;
@@ -145,19 +166,19 @@ ul {
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: var(--fs-base);
   text-decoration: none;
   color: var(--font--color);
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: var(--fs-xl);
   color: var(--font-color);
 }
 
 h3 {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: var(--fs-md);
   color: var(--font-color);
 }
 
@@ -165,8 +186,8 @@ h3 {
   border: none;
   cursor: pointer;
   font-weight: 800;
-  font-size: 1.4rem;
-  padding: 1rem 1rem;
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.4rem);
+  padding: clamp(0.6rem, 1vw, 1rem) clamp(0.6rem, 1vw, 1rem);
   align-items: center;
   display: inline-flex;
   color: var(--button-color);
@@ -199,7 +220,7 @@ h3 {
 }
 
 .section__header {
-  font-size: 3.5rem;
+  font-size: var(--fs-lg);
   text-align: center;
   padding-bottom: 30px;
 }
@@ -236,6 +257,10 @@ h3 {
   column-gap: 4rem;
 }
 
+.logo {
+  font-size: var(--fs-base);
+}
+
 .logo:hover {
   transition: var(--quick-transition);
   animation: colorWheel 2s ease-in-out infinite;
@@ -252,7 +277,7 @@ h3 {
 }
 
 .menu__icons {
-  font-size: 1.5rem;
+  font-size: var(--icon-sm);
 }
 
 .theme__icon {
@@ -297,10 +322,10 @@ h3 {
 }
 
 .moving__orb::before {
-  width: 200px;
+  width: clamp(100px, 15vw, 200px);
+  height: clamp(100px, 15vw, 200px);
   display: flex;
-  height: 200px;
-  padding: 20px;
+  padding: clamp(10px, 2vw, 20px);
   color: #fff;
   line-height: 2;
   font-weight: 700;
@@ -310,6 +335,7 @@ h3 {
   align-items: center;
   pointer-events: none;
   justify-content: center;
+  font-size: clamp(0.7rem, 0.8vw + 0.3rem, 1rem);
   animation: animateShadow 10s infinite, moveAround 5s infinite linear;
   content: "Don't mind me, just keep doing what you are doing. I'm just having fun.";
 }
@@ -354,6 +380,7 @@ h3 {
 
 .home__description {
   font-weight: 600;
+  font-size: var(--fs-md);
   color: #ffffffd4;
   padding-bottom: 40px;
 }
@@ -395,7 +422,7 @@ h3 {
 }
 
 .about__description i {
-  font-size: 3.5rem;
+  font-size: var(--icon-lg);
   animation: colorWheel 2s ease-in-out infinite;
 }
 
@@ -404,7 +431,7 @@ h3 {
   text-align: left;
   line-height: 1.7;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: var(--fs-base);
   color: var(--font-color-dim);
 }
 
@@ -444,12 +471,15 @@ h3 {
   margin-right: 70px;
 }
 
-.education__container h3 {
+.education__container h3,
+.experience__container h3 {
   font-weight: 700;
   text-align: center;
+  font-size: var(--fs-md);
 }
 
-.education__container h3 i {
+.education__container h3 i,
+.experience__container h3 i {
   animation: colorWheel 2s ease-in-out infinite;
 }
 
@@ -470,13 +500,14 @@ h3 {
 }
 
 .timeline__card h4 {
+  font-size: var(--fs-base);
   animation: colorWheel 2s ease-in-out infinite;
 }
 
 .timeline__card h2 {
   margin-top: 10px;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: var(--fs-base);
   color: var(--font-color);
 }
 
@@ -484,13 +515,13 @@ h3 {
   margin: 10px 0;
   font-weight: 600;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: var(--fs-sm);
   color: var(--font-color-dim);
 }
 
 .timeline__card .location {
   margin-top: 20px;
-  font-size: 0.9rem;
+  font-size: var(--fs-xs);
   color: var(--font-color-dim);
 }
 
@@ -525,15 +556,6 @@ h3 {
   border-radius: var(--big--border-radius);
 }
 
-.experience__container h3 {
-  font-weight: 700;
-  text-align: center;
-}
-
-.experience__container h3 i {
-  animation: colorWheel 2s ease-in-out infinite;
-}
-
 /**==========================
  * SERVICES SECTION STYLES
 ==========================*/
@@ -563,20 +585,21 @@ h3 {
 }
 
 .service__card i {
-  font-size: 3rem;
+  font-size: var(--icon-lg);
   animation: colorWheel 2s ease-in-out infinite;
 }
 
 .service__card h2 {
   margin: 10px 0;
   font-weight: 800;
+  font-size: var(--fs-md);
   color: var(--font-color);
 }
 
 .service__card p {
   line-height: 2;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: var(--fs-sm);
   padding-bottom: 20px;
   color: var(--font-color-dim);
 }
@@ -630,19 +653,19 @@ h3 {
 }
 
 .card__info h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 1.5vw + 0.5rem, 1.8rem);
   color: var(--font-color);
 }
 
 .card__info .btn {
   margin-top: 5px;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.5vw + 0.7rem, 1rem);
   padding: 0.8rem;
   border-radius: 20px;
 }
 
 .card__info .btn i {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
   padding-right: 20px;
 }
 
@@ -686,12 +709,12 @@ h3 {
   right: 0;
   margin: 20px;
   cursor: none;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2.5rem);
   position: absolute;
 }
 
 .card__description__body h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
   font-weight: 700;
 }
 
@@ -704,7 +727,7 @@ h3 {
 .card__description__body p {
   font-weight: 600;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1.2rem);
   color: var(--font-color-dim);
 }
 
@@ -716,6 +739,7 @@ h3 {
 
 .view__project a {
   font-weight: 700;
+  font-size: clamp(0.9rem, 0.5vw + 0.7rem, 1.2rem);
   color: var(--font-color);
 }
 
@@ -750,7 +774,7 @@ h3 {
 
 .contact__info h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2.5rem);
   margin-bottom: 45px;
 }
 
@@ -764,7 +788,7 @@ h3 {
 }
 
 .contact__detail h3 i {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
   margin-right: 15px;
   animation: colorWheel 2s ease-in-out infinite;
 }
@@ -772,6 +796,7 @@ h3 {
 .contact__detail p {
   font-weight: 600;
   margin-left: 50px;
+  font-size: var(--fs-sm);
   color: var(--font-color-dimer);
 }
 
@@ -783,8 +808,8 @@ h3 {
 .contact__form textarea {
   border: none;
   outline: none;
-  padding: 20px;
-  font-size: 1.5rem;
+  padding: clamp(10px, 2vw, 20px);
+  font-size: var(--fs-base);
   margin-bottom: 20px;
   border-radius: 20px;
   color: var(--font-color);
@@ -862,7 +887,7 @@ footer a {
 }
 
 .footer__container .footer__info h2 {
-  font-size: 3em;
+  font-size: clamp(2rem, 2.5vw + 0.5rem, 3em);
   font-weight: 600;
   background: linear-gradient(to top, transparent 0%, #fff 50%);
   background-clip: text;
@@ -872,6 +897,7 @@ footer a {
 
 .footer__container .footer__info p {
   font-weight: 700;
+  font-size: var(--fs-sm);
   margin-bottom: 30px;
   background: linear-gradient(to top, transparent 0%, #ffffffc7 50%);
   background-clip: text;
@@ -888,7 +914,7 @@ footer a {
 
 .footer__container .footer__links h3,
 .footer__container .follow h3 {
-  font-size: 1.5em;
+  font-size: clamp(1.2rem, 1vw + 0.5rem, 1.5em);
   font-weight: 500;
   margin-bottom: 30px;
   background: linear-gradient(to top, transparent 0%, #fff 50%);
@@ -904,11 +930,12 @@ footer a {
 
 .footer__container .footer__links a {
   margin: 20px;
+  font-size: var(--fs-base);
 }
 
 .footer__container .follow a {
   margin: 30px;
-  font-size: 1.5em;
+  font-size: clamp(1.2rem, 1vw + 0.5rem, 1.5em);
 }
 
 .footer__copyright {
@@ -918,6 +945,7 @@ footer a {
 .footer__copyright p {
   font-weight: 300;
   margin-top: 50px;
+  font-size: var(--fs-sm);
 }
 
 /*=======================
@@ -1078,67 +1106,12 @@ footer a {
     padding: 40px;
     max-width: 350px;
   }
-
-  .card__description__body h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-
-  .card__description__body img {
-    margin: 10px 0;
-    max-width: 100%;
-  }
-
-  .card__description__body p {
-    font-weight: 600;
-    font-size: 0.8rem;
-  }
-
-  .view__project a {
-    font-size: 1rem;
-    font-weight: 700;
-  }
 }
 
 @media (max-width: 1200px) {
-  #welcomeMessage p {
-    font-size: 2.5rem;
-  }
-
   .moving__orb {
     width: 80%;
     height: 80%;
-  }
-
-  .moving__orb::before {
-    width: 120px;
-    height: 120px;
-    content: "Welcome to my website";
-  }
-
-  h1 {
-    font-size: 3.8rem;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  .section__header {
-    font-size: 4rem;
-  }
-
-  .home__wrapper {
-    width: 80%;
-  }
-
-  .home__title {
-    line-height: 2;
-    font-size: 4rem;
-  }
-
-  .about__section {
-    flex-direction: column;
   }
 
   .about__container {
@@ -1151,15 +1124,6 @@ footer a {
     padding-bottom: 20px;
   }
 
-  .about__info {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  .about__description i {
-    font-size: 4rem;
-  }
-
   .about__img {
     width: 100%;
     max-width: 48rem;
@@ -1169,64 +1133,17 @@ footer a {
     padding: 0;
   }
 
-  .about__description {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-
   .timeline__container {
     flex-direction: column;
-  }
-
-  .timeline__card .date {
-    font-size: 1.5rem;
-  }
-
-  .timeline__card h2 {
-    font-size: 2.5rem;
-  }
-
-  .timeline__card p {
-    font-size: 1.8rem;
-  }
-
-  .timeline__card .location {
-    font-size: 1.5rem;
-  }
-
-  .timeline__card .location i {
-    font-weight: 800;
-    margin-right: 5px;
-    animation: colorWheel 2s ease-in-out infinite;
   }
 
   .education__container {
     margin-right: 0;
   }
 
-  .education__container h3 {
-    font-size: 3rem;
-  }
-
-  .experience__container h3 {
-    font-size: 3rem;
-  }
-
   .services__container {
     margin: 20px;
     grid-template-columns: 1fr;
-  }
-
-  .service__card i {
-    font-size: 4rem;
-  }
-
-  .service__card h2 {
-    font-size: 2.5rem;
-  }
-
-  .service__card p {
-    font-size: 2rem;
   }
 
   .portfolio__container {
@@ -1235,39 +1152,6 @@ footer a {
 
   .portfolio__card img {
     max-width: 100%;
-  }
-
-  .portfolio__header h1 {
-    font-size: 1.5rem;
-  }
-
-  .card__description__body {
-    padding: 40px;
-    max-width: 600px;
-  }
-
-  .card__description__body h3 {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  .card__description__body img {
-    margin: 10px 0;
-    max-width: 100%;
-  }
-
-  .card__description__body p {
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
-
-  .view__project a {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .card__info h2 {
-    font-size: 3rem;
   }
 
   .contact__container {
@@ -1318,10 +1202,6 @@ footer a {
 }
 
 @media (max-width: 990px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-
   .nav__list {
     column-gap: 1.9em;
   }
@@ -1331,12 +1211,6 @@ footer a {
     height: 100%;
   }
 
-  .moving__orb::before {
-    width: 60px;
-    height: 60px;
-    content: "Hello there";
-  }
-
   .about__img {
     width: 90%;
     border-radius: 20px;
@@ -1344,43 +1218,18 @@ footer a {
 }
 
 @media (max-width: 780px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
   .home__section {
     width: 100%;
     padding: 2rem 0.2rem;
   }
 
-  .logo {
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
-
   .nav__list {
-    font-size: 0.4rem;
     column-gap: 1.3rem;
-  }
-
-  .menu__icons {
-    font-weight: 900;
-    font-size: 1.3rem;
   }
 
   .moving__orb {
     width: 55%;
     height: 100%;
-  }
-
-  .moving__orb::before {
-    width: 55px;
-    height: 55px;
-    content: "Welcome!";
   }
 }
 
@@ -1402,12 +1251,6 @@ footer a {
     height: 100%;
   }
 
-  .moving__orb::before {
-    width: 40px;
-    height: 40px;
-    content: "Hello";
-  }
-
   .about__description {
     gap: 0.7rem;
     margin: 20px;
@@ -1417,18 +1260,6 @@ footer a {
 }
 
 @media (max-width: 480px) {
-  #welcomeMessage p {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
   .nav__bar {
     padding-left: 10px;
     padding-right: 10px;
@@ -1442,103 +1273,18 @@ footer a {
     column-gap: 1.5rem;
   }
 
-  .btn {
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
   .moving__orb {
     width: 20%;
     height: 100%;
-  }
-
-  .moving__orb::before {
-    width: 20px;
-    height: 20px;
-    content: "Hi";
-  }
-
-  .section__header {
-    font-size: 3.5rem;
-  }
-
-  .about__info {
-    font-size: 1.2rem;
   }
 
   .about__img {
     max-width: 25rem;
     border-radius: 20px;
   }
-
-  .timeline__card .date {
-    font-size: 1rem;
-  }
-
-  .timeline__card h2 {
-    font-size: 1.5rem;
-  }
-
-  .timeline__card p {
-    font-size: 1.1rem;
-  }
-
-  .timeline__card .location {
-    font-size: 1rem;
-  }
-
-  .service__card h2 {
-    font-size: 1.7rem;
-  }
-
-  .service__card p {
-    font-size: 1.5rem;
-  }
-
-  .services__container {
-    margin: 10px;
-  }
-
-  .card__info h2 {
-    font-size: 2rem;
-  }
-
-  .card__description__body {
-    max-width: 350px;
-  }
-
-  .card__description__body {
-    padding: 40px;
-    max-width: 300px;
-  }
-
-  .card__description__body h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-
-  .card__description__body img {
-    margin: 10px 0;
-    max-width: 100%;
-  }
-
-  .card__description__body p {
-    font-weight: 600;
-    font-size: 0.8rem;
-  }
-
-  .view__project a {
-    font-size: 1rem;
-    font-weight: 700;
-  }
 }
 
 @media (max-width: 380px) {
-  .btn {
-    font-size: 0.8rem;
-  }
-
   .nav__list {
     column-gap: 0.9rem;
   }
@@ -1546,75 +1292,11 @@ footer a {
   .about__description {
     gap: 0.6rem;
   }
-
-  .about__description i {
-    font-size: 3rem;
-    margin-top: 10px;
-  }
-
-  .about__info {
-    font-size: 1.5rem;
-  }
-
-  .service__card i {
-    font-size: 3rem;
-  }
-
-  .service__card p {
-    font-size: 1.3rem;
-  }
-
-  .portfolio__header h1 {
-    font-size: 1rem;
-  }
-
-  .card__description__body {
-    padding: 40px;
-    max-width: 300px;
-  }
-
-  .card__description__body h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-
-  .card__description__body img {
-    margin: 10px 0;
-    max-width: 100%;
-  }
-
-  .card__description__body p {
-    font-weight: 600;
-    font-size: 0.8rem;
-  }
-
-  .view__project a {
-    font-size: 1rem;
-    font-weight: 700;
-  }
 }
 
 @media (max-width: 330px) {
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-  }
-
   .portfolio__card {
     width: 95%;
-  }
-
-  .card__description__body {
-    padding: 40px;
-    max-width: 350px;
   }
 
   .contact__info {
